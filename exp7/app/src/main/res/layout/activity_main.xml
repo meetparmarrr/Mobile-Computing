@@ -1,192 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:background="#512da8"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        app:elevation="0dp">
+        android:layout_x="175dp"
+        android:layout_y="156dp"
+        android:inputType="text"
+        android:textSize="20sp" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:theme="@style/AppTheme.Toolbar">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="253dp"
+        android:text="Enter Subject:"
+        android:textSize="20sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="20dp"
+        android:text="Student Details"
+        android:textSize="30sp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_person_outline_white_24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="110dp"
+        android:text="Enter Rollno:"
+        android:textSize="20sp" />
 
-            </RelativeLayout>
+    <EditText
+        android:id="@+id/Rollno"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="175dp"
+        android:layout_y="100dp"
+        android:inputType="number"
+        android:textSize="20sp" />
 
-        </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="160dp"
+        android:text="Enter Name:"
+        android:textSize="20sp" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="174dp"
+        android:layout_y="247dp"
+        android:inputType="text"
+        android:textSize="20sp" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="-16dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="210dp"
+        android:text="Enter Marks:"
+        android:textSize="20sp" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/Marks"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="175dp"
+        android:layout_y="200dp"
+        android:inputType="number"
+        android:textSize="20sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="313dp"
+        android:text="Insert"
+        android:textSize="30dp" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="197dp"
+        android:layout_y="311dp"
+        android:text="Delete"
+        android:textSize="30dp" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="260dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bus_image_1" />
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="123dp"
+        android:layout_y="397dp"
+        android:text="Update"
+        android:textSize="30dp" />
 
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="16dp"
-                        android:fontFamily="@font/gotham"
-                        android:text="Hey Swarnil!"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="32sp" />
+    <Button
+        android:id="@+id/View"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="491dp"
+        android:text="View"
+        android:textSize="30dp" />
 
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="@font/gotham"
-                        android:text="Search and Find"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18sp" />
+    <Button
+        android:id="@+id/ViewAll"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_x="100dp"
+        android:layout_y="595dp"
+        android:text="View All"
+        android:textSize="30dp" />
 
-                </RelativeLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="-44dp"
-                    android:layout_marginRight="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:orientation="vertical">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="Destination"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="From"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="Select Date"
-                                android:inputType="date"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-                <Button
-                    android:id="@+id/search_buses"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:background="@drawable/buttonshape"
-                    android:fontFamily="@font/calibri"
-                    android:text="Search Buses"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-
-        </ScrollView>
-
-    </RelativeLayout>
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</AbsoluteLayout>

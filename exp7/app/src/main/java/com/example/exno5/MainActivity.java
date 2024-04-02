@@ -137,6 +137,7 @@ public class MainActivity extends Activity implements OnClickListener
                 buffer.append("Rollno: "+c.getString(0)+"\n");
                 buffer.append("Name: "+c.getString(1)+"\n");
                 buffer.append("Marks: "+c.getString(2)+"\n\n");
+//                buffer.append("subject: "+c.getString(2)+"\n\n");
             }
             showMessage("Student Details", buffer.toString());
         }
